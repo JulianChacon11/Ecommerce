@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <script type="module" src="/Js/principal.js"></script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .modal {
+      height: 100vh;
+    }
+
+    #card:hover {
+      box-shadow: 0 20px 60px 8px;
+    }
+  </style>
+  <title>Main</title>
+</head>
+
+<body>
+  <header>
+    <div class="flex fixed h-[8%] w-full bg-[#ABDAFC] text-[20px] tracking-[2px] font-[400] hover: items-center justify-center">
+      <ul class="flex gap-64">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Acerca De</a></li>
+        <li><a href="">Contacto</a></li>
+        <li><a href="/index.html">Salir</a></li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="flex flex-col w-full h-[600px] bg-[#586F7C] justify-center items-center">
+      <h1
+        class="mt-[50px] text-[#F4F4F9] text-[24px] font-[400] font-['BrunoAceSC'] text-[46px] tracking-[5px] font-[600]">
+        Tienda Online</h1>
+      <div class="flex h-[350px] w-[80%] bg-[#586F7C] gap-x-6 mt-[50px]">
+        <img id="carrusel" class="max-w-[40%] w-[40%] rounded-xl" src="../Imgs/captura58.jpg" alt="xd">
+        <p class="mt-[50px] text-[18px] text-white text-justify px-[15px]">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ad
+          reiciendis ipsam odit ipsa
+          veritatis quibusdam!
+          Exercitationem quae quisquam non, pariatur possimus hic, iusto minima omnis eaque culpa at temporibus.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae a fugiat velit quia quo neque dolore
+          modi
+          consequatur
+          odit maiores sint, nihil sit. Corrupti vitae id expedita eius, consequuntur quia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="container-cards"
+    class="flex flex-wrap bg-[#B8DBD9] w-full h-full bg-[#B8DBD9] items-center justify-center">
+
+  </section>
+
+  <section id="modal" class="flex fixed w-full m-auto inset-0 h-full bg-black items-center justify-center bg-opacity-75 hidden">
+    <div class=" w-[400px] h-[700px] bg-white rounded-xl items-center ">
+      <div class="flex relative w-full items-center justify-center">
+        <p
+          class="absolute top-0 right-0 text-[28px] hover:cursor-pointer bg-[red] rounded-full w-[40px] h-[40px] text-center my-[4px] mx-[4px] btn-cancelar focus:bg-opacity-75">
+          X</p>
+      </div>
+      <div id="modal-body" class="flex w-full h-full items-center justify-center"></div>
+
+    </div>
+  </section>
+</body>
+
+</html>
